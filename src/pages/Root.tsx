@@ -1,8 +1,13 @@
 import '../styles/root.scss'
 
+const generateState = () => {
+  let characterSet = 'abcdefghijklmnopqrstuvwxyz1234567890';
+  let state 
+}
+
 const getTokens = () => {
-  // generate a state to prevent CSRF
-  
+  // generate a state token to prevent CSRF
+
 }
 
 function Root() {
