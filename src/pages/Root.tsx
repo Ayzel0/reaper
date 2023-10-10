@@ -1,19 +1,13 @@
-import '../styles/root.scss'
-
-const generateState = () => {
-  let characterSet = 'abcdefghijklmnopqrstuvwxyz1234567890';
-  let state 
-}
-
-const getTokens = () => {
-  // generate a state token to prevent CSRF
-
-}
+import '../styles/root.scss';
+import Login from './Login.tsx';
 
 function Root() {
   // check for an access token
   if (localStorage.getItem("reaperDiscordAccessToken") == null) {
-    getTokens();
+    // redirect to express middleware
+    return (
+      <Login />
+    )
   } 
   
   // if an access token exists, check if it's expired
